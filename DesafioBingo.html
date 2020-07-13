@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="numero" />
+    <input type="submit" onclick="testar()" value="Adicione e verifique no Bingo!" id="verificar" />
+    
+    <script>
+        //Você deve sortear 6 números de 1
+///a 60 e guardar em uma array. Depois peça para o usuário dizer 6
+//números, um de cada vez (pode usar um prompt ou um input )
+//e guarde-os em uma outra array. Aí diga quantos números ele
+//acertou. Sim, é a loteria certinha desta vez!
+        var aleatorio = [];
+        var user = [];
+        var acertos = [];
+        var i;
+        for (i = 0; i < 7; i++) {
+            var chute = Math.round(Math.random() * 60);
+            aleatorio.push(chute);
+
+        }
+        for (i = 0; i <  7; i++) {
+        var userN = Math.round(prompt("digite um numero"));
+        user.push(userN);
+        }
+        user.filter(function (element) {
+            if (aleatorio.includes(element)) {   // se for encontrado um valor nos dois arrays
+                acertos.push(element)
+            }
+        });
+        console.log('Os números que você acertou foram: ', acertos.c;
+        
+    </script>
+</body>
+
+</html>

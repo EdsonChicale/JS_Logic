@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Como a função Math.random apenas gera valores abaixo de 0 vamos multiplicar por 100.
+        var a = parseInt( Math.random() *100);
+        var b = parseInt(prompt("Tente adivinhar, em que numero pensei? <hr>"));
+        if(isNaN(b)){
+            alert("Voce deve digitar um numero valido")
+        } else {
+        if(a == Number(b)){
+            document.write("Certo !!!!!");
+        } else {
+            document.write("Que pena, vocé errou... <hr>");
+            document.write("Pensei no número"+a);
+        }
+    }
+        console.log(a);
+    </script>
+</body>
+</html>

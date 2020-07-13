@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="tela" width="800" ; height="800" ;></canvas>
+    <script>
+        var tela = document.getElementById("tela");
+        var c = tela.getContext("2d");
+        //Bandeira Noruega
+       //Superior
+        c.fillStyle = "red";
+        c.fillRect(0, 0, 100, 100);
+        c.fillStyle = "white";
+        c.fillRect(100, 0, 20, 100);
+        c.fillStyle = "blue";
+        c.fillRect(120, 0, 60, 300);
+        c.fillStyle = "white";
+        c.fillRect(180, 0, 20, 100);
+        c.fillStyle = "red";
+        c.fillRect(200, 0, 200, 100);
+        //Fim
+        //Centro esquerdo
+        c.fillStyle = "white";
+        c.fillRect(0, 100, 120, 20);
+        c.fillStyle = "blue";
+        c.fillRect(0, 120, 400, 60);
+        c.fillStyle = "white";
+        c.fillRect(180, 100, 220, 20);
+        //Fim
+        //Centro direito
+        c.fillStyle = "white";
+        c.fillRect(0, 180, 120, 20);
+        c.fillStyle = "white";
+        c.fillRect(180, 180, 220, 20);
+        //Fim
+        //Inferior
+        c.fillStyle = "red";
+        c.fillRect(0, 200, 100, 100);
+        c.fillStyle = "white";
+        c.fillRect(100, 200, 20, 100);
+        c.fillStyle = "white";
+        c.fillRect(180, 200, 20, 100);
+        c.fillStyle = "red";
+        c.fillRect(200, 200, 200, 100);
+        //Fim
+    </script>
+</body>
+
+</html>

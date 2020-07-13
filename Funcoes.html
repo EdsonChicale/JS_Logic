@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function primeira(){
+            document.write("1- antes");
+            segunda();
+            document.write("1- depois");
+        }
+        function segunda(){
+            document.write("2- antes");
+            terceira();
+            document.write("2- depois");
+        }
+        function terceira(){
+            document.write("3");
+
+        }
+        primeira();
+
+    </script>
+</body>
+</html>

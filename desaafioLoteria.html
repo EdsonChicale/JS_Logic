@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="numero" />
+    <input type="submit" onclick="testar()" value="Adicione e verifique no Bingo!" id="verificar" />
+    <script>
+        var pc = [];
+        var user = [];
+var i =0
+        //  function clic(){
+        //   console.log(chute);
+        for (i = 0; i < 7; i++) {
+            var chute = Math.round(Math.random() * 60);
+            pc.push(chute);
+
+        }
+
+        function testar() {
+            var userN = Math.round(document.getElementById("numero"));
+            user.push(userN);
+            if (pc[i] == user[i]) {
+                console.log("Voce acertou este ")
+            } else {
+                console.log("Voce errou este ")
+
+            }
+        }
+        console.log(pc);
+        /* for (i = 0; i < 7; i++) {
+             var userN = Math.round(prompt("Digite "+i[i]+"º número do array"));
+             user.push(userN);
+         }*/
+        console.log(user);
+   /*     if (pc.join('|') === user.join('|')) {
+         console.log('The arrays are equal.');
+     } else {
+         console.log('The arrays are NOT equal.');
+     }*/
+ //   }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Ola baatata" id="numero">
+    <input type="submit" onclick="clicado()" value="Compare com o meu segredo!" id="advinhar">
+    <script>
+        var segredo = Math.round(Math.random()*5);
+        var input_number = document.getElementById("numero");
+       function clicado(){
+        if(input_number.value == segredo){
+            alert("Parabens, vc acertou")
+            input_number.value = "";
+        } else {
+            alert("Q pena,  vc errou")
+            input_number.value = "";
+
+        };
+         
+       }
+    </script>
+</body>
+</html>

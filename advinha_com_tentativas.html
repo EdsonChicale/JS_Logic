@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n_pensado = Math.round(Math.random() * 10);
+        var n_tentativa = 1;
+        while (n_tentativa <= 3 && chute != n_pensado) {
+            n_tentativa++;
+            var chute = prompt("Em que numero estou pensando entre 0 e 10?");
+            if (chute == n_pensado) {
+                document.write("Parabéns, vocé acertou!")
+             //   break;
+            } else {
+                alert(n_pensado);
+                if (chute > n_pensado) {
+                    alert("O numero é menor que o que vocé digitou")
+                } else if (chute < n_pensado) {
+                    alert("O numero é maior que o que vocé digitou")
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

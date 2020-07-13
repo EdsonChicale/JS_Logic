@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="tela" width="800"; height="800";  style="background-color: aqua
+    ;"></canvas>
+    <script>
+        var tela = document.getElementById("tela");
+        var c = tela.getContext("2d");
+     //Colombia
+        c.fillStyle = "yellow";
+        c.fillRect(0, 0, 400, 100);
+        c.fillStyle = "blue";
+        c.fillRect(0, 100, 400, 100);
+        c.fillStyle = "red";
+        c.fillRect(0, 200, 400, 100);
+     //Madacascar
+        c.fillStyle = "white";
+        c.fillRect(0, 400, 200, 300);
+        c.fillStyle = "red";
+        c.fillRect(150, 400, 300, 150);
+        c.fillStyle = "green";
+        c.fillRect(150, 550, 300, 150);
+    </script>
+</body>
+</html>

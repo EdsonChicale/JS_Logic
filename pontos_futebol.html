@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos</title>
+</head>
+
+<body>
+    <script>
+        function pulalinha() {
+            document.write("<hr>");
+        }
+        document.write("Funcao para definir os pontos de uma equipe");
+        function jogos(Vitorias, derrotas, empates) {
+            var Vitorias = prompt("Quantas vitórias tem?");
+            var empates = parseInt(prompt("Quantos empates?"));
+            return pontos = Number(empates + (Vitorias * 3));
+        }
+        pulalinha();
+        alert("Jogador A");
+        const A = jogos();
+        document.write("A, Vocé tem " + A + " pontos!");
+        alert("Jogador B");
+        pulalinha();
+        const B = jogos();
+        document.write("B, Vocé tem " + B + " pontos!");
+        pulalinha();
+        if (A >= B) {
+            document.write(" A, Estás a ir bem");
+        } else if (A < B && A > 0) {
+            document.write("A, Voce precisa melhorar");
+        }
+
+        pulalinha();
+
+
+    </script>
+</body>
+
+</html>

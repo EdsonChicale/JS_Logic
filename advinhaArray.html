@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Ola baatata" id="numero">
+    <input type="submit" onclick="clicado()" value="Compare com o meu segredo!" id="advinhar">
+
+    </script>
+    <script>
+        var input_number = document.getElementById("numero");
+
+        var chute = [12, 34, 5, 22, 444];
+        console.log(chute);
+
+        function clicado() {
+            //   percorrer um array sem saber os seus elementos
+
+            for (i = 0; i < chute.length; i++) {
+
+                if (input_number.value == chute[i]) {
+                    alert("Parabens, vc acertou o "+chute[i]+ "º numero");
+                    input_number.value = "";
+                    return;
+
+                } 
+                    alert("errou")
+
+            };
+
+        }
+    </script>
+</body>
+
+</html>

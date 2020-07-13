@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="numero" />
+    <input type="submit" onclick="clic()" value="Adicione e verifique no Bingo!" id="verificar" />
+    <script>
+        var sorteados = [];
+
+        function clic() {
+            var numeros = document.getElementById("numero").value;
+            for(i=0; i < sorteados.length; i++){
+                if(sorteados[i]== numeros){
+                    alert("Numero ja sorteado");
+                    //ocomando return pode ser usado simplesmente para parar a execução de uma função que não retorna nada
+                    return;
+                }
+            }
+            sorteados.push(numeros);
+            console.log(sorteados);
+        }
+    </script>
+</body>
+
+</html>
